@@ -23,7 +23,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Minha Lojinha CRUD</h1>
+      <h1>Mercado Preso</h1>
       <ProdutosForm
         currentProduto={currentProduto}
         onSave={handleSave}
