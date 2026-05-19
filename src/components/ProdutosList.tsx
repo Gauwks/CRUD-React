@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import { collection, getDocs, deleteDoc,  doc, QueryDocumentSnapshot, DocumentData
-} from 'firebase/firestore';
+import { useEffect, useState } from 'react';
+import { collection, getDocs, deleteDoc, doc } from 'firebase/firestore';
+import type { QueryDocumentSnapshot, DocumentData } from 'firebase/firestore';
 import { db } from '../firebase/firebaseConfig';
-import { Produto } from '../types';
-
+import type { Produto } from '../types';
 interface ProdutosListProps {
   onEdit: (produto: Produto) => void;
 }

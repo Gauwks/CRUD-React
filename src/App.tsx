@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './App.css';
 import ProdutosForm from './components/ProdutosForm';
 import ProdutosList from './components/ProdutosList';
-import { Produto } from './types';
+import type { Produto } from '../src/types/index';
 
 function App() {
   const [currentProduto, setCurrentProduto] = useState<Produto | null>(null);

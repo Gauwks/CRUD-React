@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { collection, addDoc, updateDoc, doc } from 'firebase/firestore';
 import { db } from '../firebase/firebaseConfig';
-import { Produto } from '../types';
+import type { Produto } from '../types';
 
 interface ProdutosFormProps {
   currentProduto: Produto | null;
