@@ -63,13 +63,7 @@ const ProdutosForm: React.FC<ProdutosFormProps> = ({ currentProduto, onSave, onC
         <div>
           <label>Preço</label>
           <input
-            type="number"
-            value={preco}
-            onChange={(e) => setPreco(Number(e.target.value))}
-            required
-            min="0"
-            step="0.01"
-          />
+            type="number" value={preco} onChange={(e) => setPreco(Number(e.target.value))} required />
         </div>
         <button type="submit">{currentProduto ? 'Salvar Alterações' : 'Adicionar Produto'}</button>
         {currentProduto && (
