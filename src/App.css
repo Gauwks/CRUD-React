@@ -1,8 +1,8 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', Arial, sans-serif;
-  background-color: #111;
-  color: #f5f5f5;
+  background-color: #0d0d0d; /* branco invertido */
+  color: #f0f0f0;
 }
 
 .App {
@@ -14,17 +14,17 @@ body {
   margin: 0 auto;
 }
 
-/* FORMULÁRIO */
+/* FORM */
 form {
   display: flex;
   flex-direction: column;
   gap: 15px;
   padding: 25px;
-  background: #1c1c1c;
+  background: #1a0033; /* amarelo invertido -> roxo escuro */
   border-radius: 12px;
   width: 100%;
   margin-bottom: 30px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
 }
 
 form div {
@@ -34,8 +34,8 @@ form div {
 
 form label {
   margin-bottom: 6px;
-  font-weight: 600;
-  color: #ffd700;
+  font-weight: bold;
+  color: #ff8800; /* azul invertido -> laranja */
 }
 
 form input,
@@ -43,33 +43,30 @@ form textarea {
   padding: 10px;
   border: 1px solid #333;
   border-radius: 8px;
-  background-color: #222;
+  background-color: #0f001f;
   color: white;
-  transition: 0.2s ease;
 }
 
 form input:focus,
 form textarea:focus {
   outline: none;
-  border-color: #ffd700;
-  box-shadow: 0 0 5px #ffd70088;
+  border-color: #ff8800;
+  box-shadow: 0 0 5px #ff8800aa;
 }
 
-/* BOTÕES DO FORM */
+/* BOTÕES */
 form button {
   padding: 12px;
-  background-color: #ffd700;
-  color: #111;
+  background-color: #ff8800; /* azul invertido */
+  color: #000;
   font-weight: bold;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: 0.2s ease;
 }
 
 form button:hover {
-  background-color: #ffcc00;
-  transform: translateY(-2px);
+  background-color: #ff6600;
 }
 
 form button:last-child {
@@ -81,30 +78,25 @@ form button:last-child:hover {
   background-color: #666;
 }
 
-/* LISTA DE PRODUTOS */
+/* LISTA */
 ul {
   list-style: none;
   padding: 0;
   width: 100%;
 }
 
-/* CARD DO PRODUTO */
+/* CARD */
 li {
-  background: #1c1c1c;
+  background: #14002a;
   border-radius: 12px;
   padding: 20px;
   margin-bottom: 15px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
-  transition: 0.2s ease;
-}
-
-li:hover {
-  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
 }
 
 li h3 {
   margin: 0 0 10px 0;
-  color: #ffd700;
+  color: #ff8800;
 }
 
 li p {
@@ -112,32 +104,30 @@ li p {
   color: #ccc;
 }
 
-/* BOTÕES DOS CARDS */
+/* BOTÕES DO CARD */
 li button {
   padding: 8px 14px;
   margin-right: 10px;
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  font-size: 14px;
   font-weight: bold;
-  transition: 0.2s ease;
 }
 
 li button:first-of-type {
-  background-color: #ffd700;
-  color: #111;
+  background-color: #ff8800;
+  color: #000;
 }
 
 li button:first-of-type:hover {
-  background-color: #ffcc00;
+  background-color: #ff6600;
 }
 
 li button:last-of-type {
-  background-color: #aa0000;
+  background-color: #660000;
   color: white;
 }
 
 li button:last-of-type:hover {
-  background-color: #cc0000;
+  background-color: #990000;
 }
