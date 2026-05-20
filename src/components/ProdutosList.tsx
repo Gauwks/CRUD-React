@@ -33,7 +33,7 @@ const ProdutosList: React.FC<ProdutosListProps> = ({ onEdit, refresh }) => {
 
   return (
     <>
-      <h2>📋 Produtos Cadastrados</h2>
+      <h2> Produtos Cadastrados</h2>
       {produtos.length === 0 ? (
         <p style={{textAlign: 'center', padding: '3rem', color: '#64748b'}}>
           Nenhum produto cadastrado ainda.
@@ -50,13 +50,13 @@ const ProdutosList: React.FC<ProdutosListProps> = ({ onEdit, refresh }) => {
                 className="btn btn-edit"
                 onClick={() => onEdit(product)}
               >
-                ✏️ Editar
+                 Editar
               </button>
               <button 
                 className="btn btn-delete"
                 onClick={() => product.id && handleDelete(product.id)}
               >
-                🗑️ Deletar
+                 Deletar
               </button>
             </div>
           </div>
