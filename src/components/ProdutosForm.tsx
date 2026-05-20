@@ -59,7 +59,7 @@ const ProdutosForm: React.FC<ProdutosFormProps> = ({
 
   return (
     <>
-      <h2>{currentProduto ? '✏️ Editar Produto' : '➕ Adicionar Novo Produto'}</h2>
+      <h2>{currentProduto ? ' Editar Produto' : '➕ Adicionar Novo Produto'}</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label>Nome do Produto</label>
@@ -95,7 +95,7 @@ const ProdutosForm: React.FC<ProdutosFormProps> = ({
 
         <div className="form-buttons">
           <button type="submit" className="btn btn-primary">
-            {currentProduto ? '💾 Salvar Alterações' : '✅ Adicionar Produto'}
+            {currentProduto ? ' Salvar Alterações' : ' Adicionar Produto'}
           </button>
           
           {currentProduto && (
