@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import ProdutosForm from './components/ProdutosForm';
 import ProdutosList from './components/ProdutosList';
-import type { Produto } from '../src/types/index';
+import type { Produto } from './types';
 
 function App() {
   const [currentProduto, setCurrentProduto] = useState<Produto | null>(null);
@@ -23,13 +23,22 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Mercado Preso</h1>
-      <ProdutosForm
-        currentProduto={currentProduto}
-        onSave={handleSave}
-        onCancelEdit={handleCancelEdit}
-      />
-      <ProdutosList onEdit={handleEdit} />
+      <header>
+        <h1>🛒 Mercado Preso</h1>
+        <p>Gestão de Produtos</p>
+      </header>
+
+      <div className="produtos-form">
+        <ProdutosForm
+          currentProduto={currentProduto}
+          onSave={handleSave}
+          onCancelEdit={handleCancelEdit}
+        />
+      </div>
+
+      <div className="produtos-lista">
+        <ProdutosList onEdit={handleEdit} refresh={refresh} />
+      </div>
     </div>
   );
 }
